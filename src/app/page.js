@@ -11,6 +11,26 @@ export default function Home() {
           width={100}
           height={20}
           priority
+
+          import mongoose from 'mongoose';
+          
+          const connectDB = async () => {
+              if (mongoose.connection.readyState >= 1) {
+                  return;
+              }
+            try {
+              const conn = await mongoose.connect(process.env.MONGODB_URI, {
+                  useNewUrlParser: true,
+                  useUnifiedTopology: true,
+              });
+              console.log(`MongoDB Connected: ${conn.connection.host}`);
+            }
+              catch (error) {
+                  console.error(`Error: ${error.message}`);
+                  process.exit(1);
+              }   
+          }
+              export default connectDB;
         />
         <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
           <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
