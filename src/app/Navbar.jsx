@@ -58,9 +58,7 @@ const Navbar = () => {
     </div>
   )
 }
-
 export default Navbar
-
 
 import { useState } from "react";
 
