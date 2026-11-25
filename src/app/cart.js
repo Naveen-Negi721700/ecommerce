@@ -192,19 +192,7 @@ function App() {
           )}
 
           {/* Total */}
-          <div className="mt-6">
-            <div className="flex justify-between font-bold text-xl">
-              <span>Total:</span>
-              <span>₹{totalPrice.toLocaleString("en-IN")}</span>
-            </div>
-
-            <button
-              disabled={cart.length === 0}
-              className="bg-green-600 text-white w-full py-3 rounded-lg mt-5 hover:bg-green-700 disabled:bg-gray-400"
-            >
-              Checkout
-            </button>
-          </div>
+     
         </div>
 
       </div>

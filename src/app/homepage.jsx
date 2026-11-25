@@ -93,16 +93,7 @@ const Footer = () => {
           </div>
 
           {/* Services */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Services</h3>
-
-            <ul className="space-y-3 text-gray-400">
-              <li>Web Development</li>
-              <li>UI/UX Design</li>
-              <li>App Development</li>
-              <li>Digital Marketing</li>
-            </ul>
-          </div>
+         
 
           {/* Contact */}
           <div>
@@ -112,6 +103,7 @@ const Footer = () => {
               <li>Email: hello@example.com</li>
               <li>Phone: +91 9876543210</li>
               <li>Location: India</li>
+              <li>home </li>
             </ul>
           </div>
 
@@ -124,10 +116,6 @@ const Footer = () => {
             © {new Date().getFullYear()} MyWebsite. All rights reserved.
           </p>
 
-          <div className="flex gap-6 text-sm text-gray-400">
-            <a href="/privacy" className="hover:text-white">Privacy Policy</a>
-            <a href="/terms" className="hover:text-white">Terms & Conditions</a>
-          </div>
 
         </div>
 
