@@ -147,28 +147,7 @@ function App() {
               <select className="border rounded-lg p-2 text-sm outline-none">
                 <option>This Week</option>
                 <option>Last Week</option>
-                <option>This Month</option>
-              </select>
-            </div>
-
-            <div className="flex items-end justify-between gap-4 h-52">
-              {[40, 65, 48, 85, 58, 72, 35].map((height, index) => (
-                <div
-                  key={index}
-                  className="flex flex-col items-center gap-3 flex-1 h-full justify-end"
-                >
-                  <div
-                    className="w-full max-w-12 bg-purple-500 hover:bg-purple-700 rounded-t-lg transition"
-                    style={{ height: `${height}%` }}
-                  />
-                  <span className="text-sm text-gray-500">
-                    {["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"][index]}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </div>
-
+                <opt
           {/* Project Progress */}
           <div className="bg-white p-6 rounded-2xl shadow-sm">
             <h3 className="text-lg font-bold">Project Progress</h3>
@@ -232,22 +211,7 @@ function App() {
                     <span className={`px-3 py-1 rounded-full text-xs font-medium ${
                       task.color === "green"
                         ? "bg-green-100 text-green-700"
-                        : task.color === "purple"
-                        ? "bg-purple-100 text-purple-700"
-                        : "bg-yellow-100 text-yellow-700"
-                    }`}>
-                      {task.status}
-                    </span>
-                  </td>
-                  <td>
-                    <button className="text-gray-500 hover:text-purple-600">
-                      •••
-                    </button>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+                  
         </section>
 
       </main>
