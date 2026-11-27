@@ -155,6 +155,61 @@ function App() {
               Overall completion
             </p>
 
+            <form onSubmit={handlePayment}>
+
+              {paymentMethod === "card" && (
+                <div className="space-y-5">
+
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                      Cardholder Name
+                    </label>
+                    <input
+                      type="text"
+                      name="cardName"
+                      value={formData.cardName}
+                      onChange={handleChange}
+                      placeholder="Name on card"
+                      required
+                      className="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none focus:border-indigo-600"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                      Card Number
+                    </label>
+                    <input
+                      type="text"
+                      name="cardNumber"
+                      value={formData.cardNumber}
+                      onChange={handleChange}
+                      placeholder="1234 5678 9012 3456"
+                      maxLength="19"
+                      required
+                      className="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none focus:border-indigo-600"
+                    />
+                  </div>
+
+                  <div className="grid grid-cols-2 gap-4">
+
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-2">
+                        Expiry Date
+                      </label>
+                      <input
+                        type="text"
+                        name="expiry"
+                        value={formData.expiry}
+                        onChange={handleChange}
+                        placeholder="MM/YY"
+                        maxLength="5"
+                        required
+                        className="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none focus:border-indigo-600"
+                      />
+                    </div>
+
+
             <div className="flex justify-center items-center py-9">
               <div className="w-36 h-36 rounded-full border-[14px] border-purple-500 border-r-purple-100 border-b-purple-100 flex items-center justify-center">
                 <div className="text-center">

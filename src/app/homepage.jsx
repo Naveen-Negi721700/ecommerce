@@ -94,19 +94,6 @@ const Footer = () => {
 
           {/* Services */}
          
-
-          {/* Contact */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
-
-            <ul className="space-y-3 text-gray-400">
-              <li>Email: hello@example.com</li>
-              <li>Phone: +91 9876543210</li>
-              <li>Location: India</li>
-              <li>home </li>
-            </ul>
-          </div>
-
         </div>
 
         {/* Bottom Section */}
